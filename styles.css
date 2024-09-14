@@ -60,13 +60,14 @@ nav ul {
     gap: 20px;
 }
 
-.hero {
+.hero, .about {
     display: flex;
     height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
 }
 
 .hero p {
@@ -79,4 +80,20 @@ nav ul {
     bottom: 20px;
     cursor: pointer;
     font-size: 20px;
+}
+
+.thisLink {
+    color: #00ff15;
+}
+
+.about h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    width: 40vw;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 25px;
 }
