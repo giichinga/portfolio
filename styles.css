@@ -1,110 +1,82 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Playfair Display';
-    src: url(Assets/PlayfairDisplay-VariableFont_wght.ttf);
+html {
+    scroll-behavior: smooth;
 }
 
-@font-face {
-    font-family: 'Playfair Display Italic';
-    src: url(Assets/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+html::-webkit-scrollbar{
+    width: 10px;
 }
 
-:root {
-    --primaryFont: 'Playfair Display','Work Sans', serif, sans-serif;
-    --altFont: 'Playfair Display Italic','Work Sans', serif, sans-serif;
-    --decriptionFont: 'Work Sans', sans-serif;
-    --bodyBgColour:linear-gradient(to left, rgb(27, 76, 136) 0%, rgb(13, 36, 67) 100%);
-    --sectionBgColour: rgb(255, 255, 243);
-    --borderColour: rgb(129, 174, 216);
-    --fontColour: rgb(108, 108, 107);
+html::-webkit-scrollbar-track{
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #474747;
+
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace, sans-serif;
+    background-color: #1d1e22;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active, .logo:hover {
+    color: #00ff15;
+    cursor: pointer;
 }
 
 ul {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-body {
-    background: var(--bodyBgColour);
-    font-family: var(--primaryFont);
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    overflow: hidden;
-}
-
-.landingPage {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.intro {
+.navContainer {
     width: 100%;
-    display: block;
-}
-
-.intro ul {
     display: flex;
     justify-content: space-between;
-    margin: 40px;
-    color: var(--sectionBgColour);
-    font-family: var(--decriptionFont);
+    align-items: center;
+    padding: 30px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
-.card {
-   background: var(--borderColour);
-   padding: 19px;
-   width: 80vw;
-   color: var(--fontColour);
+nav ul {
+    display: flex;
+    gap: 20px;
 }
 
-.cardContainer {
-    border-radius: 20px;
-    background: var(--sectionBgColour);
-    padding: 40px;
-}
-
-nav svg {
-    height: 50px;
-    width: 50px;
-}
-
-.landingContent p {
-    font-size: 5rem;
+.hero {
+    display: flex;
+    height: 100vh;
     width: 100%;
-    margin-bottom: 0;
-    line-height: 1.1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.alignRight {
-    text-align: right;
+.hero p {
+    font-size: 25px;
+    text-align: center;
 }
 
-.landingContent p span {
-    font-family: var(--altFont);
-    color: black;
-}
-
-.cardContainer button {
-    width: calc(100% - 2rem);
-    border-radius: 50px;
-    margin: 2rem 1rem;
-    padding: 20px;
-    border: 1px solid var(--borderColour);
-    filter: drop-shadow(4px -4px var(--borderColour));
-    background: var(--sectionBgColour);
+.scrollDown {
+    position: absolute;
+    bottom: 20px;
     cursor: pointer;
-    display: none;
+    font-size: 20px;
 }
