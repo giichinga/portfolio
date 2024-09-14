@@ -60,7 +60,7 @@ nav ul {
     gap: 20px;
 }
 
-.hero, .about {
+.hero, .about , .tech {
     display: flex;
     height: 100vh;
     width: 100%;
@@ -96,4 +96,51 @@ nav ul {
     text-align: center;
     line-height: 1.5;
     font-size: 25px;
+}
+
+.careerChoice {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.careerChoice h2 {
+    padding: 10px 20px;
+}
+
+.careerChoice h2:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.active {
+    background-color: black;
+    color: #00ff15;
+}
+
+.techs {
+    margin-top: 30px;
+}
+
+.techs li {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.techEEE img {
+    height: 72px;
+    width: 72px;
+    border-radius: 15px;
+}
+
+.techWeb ul, .techEEE ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.techEEE {
+    display: none;
 }
