@@ -40,31 +40,23 @@ if (careerWebBtn && careerElecBtn && careerWeb && careerElec) {
 }
 
 // Project buttons functionality
-// Get the buttons
 const projectWebBtn = document.getElementById("projectWebBtn");
 const projectElecBtn = document.getElementById("projectElecBtn");
 
-// Check if both buttons exist before running the code
 if (projectWebBtn && projectElecBtn) {
-    // Add event listeners for Web Dev projects button
-    projectWebBtn.addEventListener("click", function() {
-        // Show Web Projects, hide Electrical Projects
-        document.getElementById("projectWeb").style.display = "block";
-        document.getElementById("projectElec").style.display = "none";
-        
-        // Add 'selected' class to the clicked button
-        this.classList.add("selected");
-        projectElecBtn.classList.remove("selected");
-    });
+  projectWebBtn.addEventListener("click", function () {
+    document.getElementById("projectWeb").style.display = "block";
+    document.getElementById("projectElec").style.display = "none";
 
-    // Add event listeners for EEE projects button
-    projectElecBtn.addEventListener("click", function() {
-        // Show Electrical Projects, hide Web Projects
-        document.getElementById("projectElec").style.display = "block";
-        document.getElementById("projectWeb").style.display = "none";
-        
-        // Add 'selected' class to the clicked button
-        this.classList.add("selected");
-        projectWebBtn.classList.remove("selected");
-    });
+    this.classList.add("selected");
+    projectElecBtn.classList.remove("selected");
+  });
+
+  projectElecBtn.addEventListener("click", function () {
+    document.getElementById("projectElec").style.display = "block";
+    document.getElementById("projectWeb").style.display = "none";
+
+    this.classList.add("selected");
+    projectWebBtn.classList.remove("selected");
+  });
 }
