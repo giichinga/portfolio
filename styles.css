@@ -11,6 +11,13 @@
     src: url(Assets/JetBrainsMono-Medium.ttf);
 }
 
+:root {
+    --bgColour:#1d1e22;
+    --accentColour: #00ff15;
+    --cardColour: #242424;
+    --fontColour: white;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -31,22 +38,28 @@ html::-webkit-scrollbar-thumb{
 
 body {
     font-family: 'JetBrains Mono', monospace, sans-serif;
-    background-color: #1d1e22;
-    color: white;
+    background-color: var(--bgColour);
+    color: var(--fontColour);
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--fontColour);
+    font-family: inherit;
 }
 
 a:hover, a:active, .logo:hover {
-    color: #00ff15;
+    color: var(--accentColour);
     cursor: pointer;
 }
 
 ul {
     list-style: none;
+}
+
+button {
+    font-family: inherit;
+    
 }
 
 /* Navigation Bar */
@@ -108,7 +121,7 @@ nav ul {
 }
 
 .thisLink {
-    color: #00ff15;
+    color: var(--accentColour);
 }
 
 /* About Section */
@@ -140,12 +153,12 @@ nav ul {
 
 .careerChoice h2:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: var(--cardColour);
 }
 
 .active {
-    background-color: black;
-    color: #00ff15;
+    background-color: var(--cardColour);
+    color: var(--accentColour);
 }
 
 .techs {
@@ -191,8 +204,8 @@ nav ul {
 }
 
 .contact ul li a:hover {
-    background-color: black;
-    color: #00ff15;
+    background-color: var(--cardColour);
+    color: var(--accentColour);
     cursor: pointer;
 }
 
@@ -206,7 +219,7 @@ nav ul {
 }
 
 .contact ul li a:hover svg path  {
-    stroke: #00ff15;   
+    stroke: var(--accentColour);   
 }
 
 /* Projects Section */
@@ -234,15 +247,15 @@ nav ul {
 
 
 .projectChooser .selected {
-    background-color: black;
-    color: #00ff15;
+    background-color: var(--cardColour);
+    color: var(--accentColour);
 }
 
 .projectContainer {
     width: 420px;
     height: fit-content;
-    background-color: black;
-    border-radius: 0 0 20px 20px;
+    background-color: var(--cardColour);
+    border-radius: 0 20px 20px 20px;
     padding: 20px;
 }
 
@@ -252,8 +265,8 @@ nav ul {
 }
 
 .projectContainer li:hover {
-    background-color: #1d1e22;
-    color: #00ff15;
+    background-color: var(--bgColour);
+    color: var(--accentColour);
 }
 
 .elecProjects {
@@ -299,7 +312,27 @@ nav ul {
 }
 
 .projectDescription a {
-    color: #00ff15;
+    color: var(--accentColour);
+}
+
+
+.projectsBtnContainer{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.projectsBtn {
+    padding: 10px 20px;
+    background-color: var(--cardColour);
+    color: var(--fontColour);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 3px solid var(--accentColour);
 }
 
 /* Mobile Responsive Design */
@@ -378,20 +411,20 @@ nav ul {
 
 
     .projectChooser {
-        gap: 10px;
+        gap: 0px;
         font-size: 10px;
     }
 
     .projectChooser h2 {
-        width: 150px;
+        width: 42.5vw;
     }
 
     .projectContainer {
-        width: 310px;
+        width: 85vw;
     }
 
     .navContainer {
-        background-color: #1d1e22;
+        background-color: var(--bgColour);
         backdrop-filter: none;
     }
 }

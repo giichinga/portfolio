@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="../Assets/code.svg">
-    <title>This Website Project</title>
+    <title><!--project name--></title>
 </head>
 <body>
     <div class="navContainer">
@@ -26,23 +26,15 @@
         </div>
     </div>
     <section class="actuaProjectContainer">
-        <h1 class="projectTitle thisLink">Project: This Website</h1>
+        <h1 class="projectTitle thisLink">Project: <!--Project Name--></h1>
         <h3>Objectives:</h3>
         <ul class="objectives">
-            <li>Biuld a deployable site</li>
-            <li>Simplicity and minimalism</li>
-            <li>Typographic website</li>
+            <li><!--objective1--></li>
+            <li><!--objective2--></li>
+            <li><!--objective3--></li>
         </ul>
         <p class="projectDescription" >
-            This website is kinda personal. I have been trying to biuld a personal portfolio website and had many variations like <a href="https://github.com/giichinga/My-Portfolio" >this one</a> and <a href="https://github.com/giichinga/Portfolio-website-" >this also.</a> Eventually I decided to go for a minimalistic and simple look. The colours I choose were three: <br> &nbsp; 1. Light black for the website background, <br> &nbsp; 2. Black for cards and some hover effects and <br> &nbsp; 3. Green for the accent colour. <br> <br>
-            
-            I chose Jetbrains Mono Variable font which is a font from the famous IDE creators <a href="https://www.jetbrains.com/" >Jetbrains</a>. I kind of used their IDEs at first when I was learning to code but most of them are free for students. Later I transitioned to <a href="https://code.visualstudio.com/" >VS Code</a> but I still made sure the display font was Jetbrains Mono. So this is kind of a personal favourite. The font is open source and you can find it <a href="https://www.jetbrains.com/lp/mono/" >here</a>. <br> <br>
-            
-            The website is a single page website with a few sections. The hero section has a welcome message and a call to action to learn more about me. The about section has a brief description of me and my interests. The tech stack section has a list of technologies I am familiar with. The contact section has a form to contact me. The projects section has a list of projects I have done. <br> <br>
-            
-            I have biuld with HTML, plain CSS and a little JavaScript for adding functionablility.<br> <br>
-
-             You can find the source code of this website <a href="https://github.com/giichinga/portfolio">here.</a>
+        <!--project description-->
         </p>
         <div class="projectsBtnContainer">
             <button class="projectsBtn"><a href="../projects.html">more projects</a></button>

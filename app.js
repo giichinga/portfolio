@@ -42,11 +42,13 @@ if (careerWebBtn && careerElecBtn && careerWeb && careerElec) {
 // Project buttons functionality
 const projectWebBtn = document.getElementById("projectWebBtn");
 const projectElecBtn = document.getElementById("projectElecBtn");
+const projectContainer = document.querySelector(".projectContainer");
 
 if (projectWebBtn && projectElecBtn) {
   projectWebBtn.addEventListener("click", function () {
     document.getElementById("projectWeb").style.display = "block";
     document.getElementById("projectElec").style.display = "none";
+    projectContainer.style.borderRadius = "0 20px 20px 20px";
 
     this.classList.add("selected");
     projectElecBtn.classList.remove("selected");
@@ -55,6 +57,7 @@ if (projectWebBtn && projectElecBtn) {
   projectElecBtn.addEventListener("click", function () {
     document.getElementById("projectElec").style.display = "block";
     document.getElementById("projectWeb").style.display = "none";
+    projectContainer.style.borderRadius = "20px 0 20px 20px";
 
     this.classList.add("selected");
     projectWebBtn.classList.remove("selected");
