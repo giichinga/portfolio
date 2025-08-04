@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb{
 
 }
 
-body::before,
+/* body::before,
 body::after {
     content: '';
     position: absolute;
@@ -45,7 +45,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */
 
 
 body {
@@ -268,7 +268,7 @@ nav ul {
     width: 420px;
     height: fit-content;
     background-color: var(--cardColour);
-    border-radius: 0 20px 20px 20px;
+    border-radius: 20px;
     padding: 20px;
 }
 
@@ -387,8 +387,10 @@ nav ul {
         font-size: 20px;
     }
 
-    .scrollDown {
+    .scrollDown a {
         font-size: 15px;
+        cursor: pointer !important;
+        z-index: 1000;
     }
 
     .about h1 {

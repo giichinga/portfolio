@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../Assets/code.svg">
+    <title>Qartmatt – Custom Ecommerce Marketplace</title>
+</head>
+<body>
+    <div class="navContainer">
+        <div class="logo">
+            <h1><a href="../index.html">Tonny.</a></h1>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="../about.html">about.</a></li>
+                <li><a href="../techStack.html">tech_stack.</a></li>
+                <li><a href="../contact.html">contact.</a></li>
+                <li><a class="thisLink" href="../projects.html">projects.</a></li>
+            </ul>
+        </nav>
+        <div class="mobileControls">
+            <svg id="openMenu" viewBox="0 0 24 24" width="50px" height="50px" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                <path d="M4 7L7 7M20 7L11 7" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M20 17H17M4 17L13 17" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M4 12H7L20 12" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+            <svg id="closeMenu" viewBox="0 0 24 24" width="50px" height="50px" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+                <path d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+    </div>
+
+    <section class="actuaProjectContainer">
+        <h1 class="projectTitle thisLink">Project: Qartmatt</h1>
+
+        <h3>Objectives:</h3>
+        <ul class="objectives">
+            <li>Design and develop a scalable ecommerce marketplace from scratch</li>
+            <li>Implement multi-vendor support, order processing, and secure checkout</li>
+            <li>Deliver fast performance with clean architecture and SEO-first strategy</li>
+        </ul>
+
+        <p class="projectDescription">
+            <strong>Qartmatt</strong> is a custom-built ecommerce marketplace inspired by platforms like Jumia. Unlike off-the-shelf solutions, this project was developed entirely from the ground up using <strong>Next.js</strong> for the frontend, <strong>PHP</strong> for backend logic, and <strong>MySQL</strong> as the database engine. This gave me complete control over performance, scalability, and flexibility.
+            <br><br>
+            The platform features multi-category product listings, cart and order management, vendor registration, and admin control panels. Every major interaction—like filtering, search, login, and checkout—was built as reusable components for maximum maintainability. I implemented robust authentication, CSRF protection, and form validation to ensure secure user interactions.
+            <br><br>
+            From a performance standpoint, the site leverages server-side rendering with dynamic routing to keep load times minimal and indexing efficient. API endpoints were custom-crafted to return only necessary data, reducing payload and speeding up front-end rendering.
+            <br><br>
+            I also integrated <strong>on-page SEO strategies</strong> directly into the Next.js architecture, including dynamic meta tags, structured data markup, and clean URLs for every product and category page. This helps Qartmatt rank well in organic search and keeps the site highly discoverable.
+            <br><br>
+            This project showcases my ability to build large-scale, production-ready web applications using a modern JavaScript stack, with complete control of backend logic and database design. It’s designed to be both user-friendly and technically sound.
+            <br><br>
+            You can explore the live platform here: 
+            <a href="https://qartmatt.co.ke" target="_blank" rel="noopener noreferrer">qartmatt.co.ke</a>
+        </p>
+
+        <div class="projectsBtnContainer">
+            <button class="projectsBtn"><a href="../projects.html">more projects</a></button>
+        </div>
+    </section>
+
+    <script src="../app.js"></script>
+</body>
+</html>
